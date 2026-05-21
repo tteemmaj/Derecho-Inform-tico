@@ -864,3 +864,44 @@ a  { text-decoration: none; color: inherit; }
 .content-section { animation: fadeUp .5s var(--ease) both; }
 
 .portfolio-header .header-inner { animation: fadeUp .6s var(--ease) .1s both; }
+
+
+/* Modifica o reemplaza estas reglas existentes en tu portafolio.css */
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: .65rem;
+  padding: .55rem 1.5rem;
+  font-size: .82rem;
+  color: var(--gray-light);
+  /* Optimizamos los tiempos de transición para evitar "lag" visual */
+  transition: background .15s ease, color .15s ease, padding-left .15s ease, border-color .15s ease;
+  border-left: 3px solid transparent;
+  line-height: 1.3;
+}
+
+/* El HOVER siempre debe responder prioritariamente */
+.nav-link:hover {
+  color: var(--white) !important;
+  background: rgba(255, 255, 255, 0.08) !important;
+  padding-left: 1.75rem;
+}
+
+/* Estado activo estable */
+.nav-link.active {
+  color: var(--mint-deep);
+  border-left-color: var(--mint-deep);
+  background: rgba(212, 237, 227, 0.07);
+  font-weight: 500;
+}
+
+/* Forzar que el número interno del active herede el color correctamente */
+.nav-link.active .nav-num { 
+  color: var(--mint-deep); 
+}
+
+/* Asegurar que si pasas el mouse por encima de un elemento activo, siga viéndose el hover blanco */
+.nav-link.active:hover .nav-num {
+  color: var(--white);
+}

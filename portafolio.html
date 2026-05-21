@@ -7,24 +7,17 @@
   <link rel="stylesheet" href="portafolio.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght=0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- Mobile menu toggle -->
   <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
     <span></span><span></span><span></span>
   </button>
 
-  <!-- Sidebar overlay for mobile -->
   <div class="sidebar-overlay" id="sidebarOverlay"></div>
 
-  <!-- ═══════════════════════════════════════
-       SIDEBAR
-  ════════════════════════════════════════ -->
   <aside class="sidebar" id="sidebar">
     <div class="sidebar-brand">
       <div class="sidebar-logo-wrap">
@@ -35,7 +28,7 @@
     </div>
 
     <nav class="sidebar-nav">
-      <p class="nav-section-label">Parte I</p>
+      <p class="nav-section-label">Parte I: Derecho Mercantil</p>
       <a href="#titulos-credito" class="nav-link active" data-section="titulos-credito">
         <span class="nav-num">01</span> Títulos de Crédito
       </a>
@@ -49,136 +42,111 @@
         <span class="nav-num">04</span> La Empresa Mercantil
       </a>
 
-      <p class="nav-section-label">Parte II</p>
-      <a href="#derecho" class="nav-link" data-section="derecho">
+      <p class="nav-section-label">Parte II: Derecho Informático</p>
+      <a href="#definicion-derecho" class="nav-link" data-section="definicion-derecho">
         <span class="nav-num">05</span> Definición de Derecho
       </a>
-      <a href="#ramas" class="nav-link" data-section="ramas">
+      <a href="#ramas-derecho" class="nav-link" data-section="ramas-derecho">
         <span class="nav-num">06</span> Ramas del Derecho
       </a>
       <a href="#cibernetica" class="nav-link" data-section="cibernetica">
-        <span class="nav-num">07</span> Cibernética
+        <span class="nav-num">07</span> Definición de Cibernética
       </a>
       <a href="#informatica" class="nav-link" data-section="informatica">
-        <span class="nav-num">08</span> Informática
+        <span class="nav-num">08</span> Definición de Informática
       </a>
-      <a href="#relacion" class="nav-link" data-section="relacion">
-        <span class="nav-num">09</span> Derecho e Informática
+      <a href="#relacion-derecho-inf" class="nav-link" data-section="relacion-derecho-inf">
+        <span class="nav-num">09</span> Relación Derecho e Informática
       </a>
-      <a href="#clasificacion-ij" class="nav-link" data-section="clasificacion-ij">
-        <span class="nav-num">10</span> Informática Jurídica
+      <a href="#clasificacion-inf-jur" class="nav-link" data-section="clasificacion-inf-jur">
+        <span class="nav-num">10</span> Clasificación Inf. Jurídica
       </a>
-      <a href="#derecho-informatico" class="nav-link" data-section="derecho-informatico">
-        <span class="nav-num">11</span> Derecho Informático
+      <a href="#derecho-informatico-def" class="nav-link" data-section="derecho-informatico-def">
+        <span class="nav-num">11</span> Definición Derecho Informático
       </a>
-      <a href="#contrato-electronico" class="nav-link" data-section="contrato-electronico">
-        <span class="nav-num">12</span> Contrato Electrónico
+      <a href="#contrato-electronico-def" class="nav-link" data-section="contrato-electronico-def">
+        <span class="nav-num">12</span> Qué es Contrato Electrónico
       </a>
-      <a href="#confidencialidad" class="nav-link" data-section="confidencialidad">
-        <span class="nav-num">13</span> Confidencialidad
+      <a href="#confidencialidad-finalidad" class="nav-link" data-section="confidencialidad-finalidad">
+        <span class="nav-num">13</span> Finalidad Confidencialidad
       </a>
-      <a href="#firma-electronica" class="nav-link" data-section="firma-electronica">
-        <span class="nav-num">14</span> Firma Electrónica
+      <a href="#firma-electronica-def" class="nav-link" data-section="firma-electronica-def">
+        <span class="nav-num">14</span> En qué consiste la Firma Elec.
       </a>
-      <a href="#ley-firma" class="nav-link" data-section="ley-firma">
-        <span class="nav-num">15</span> Ley Firma Electrónica GT
+      <a href="#ley-firma-gt" class="nav-link" data-section="ley-firma-gt">
+        <span class="nav-num">15</span> Ley de Firma Elec. GT
       </a>
-      <a href="#patente" class="nav-link" data-section="patente">
-        <span class="nav-num">16</span> La Patente
+      <a href="#patente-def" class="nav-link" data-section="patente-def">
+        <span class="nav-num">16</span> Qué es la Patente
       </a>
-      <a href="#habeas-data" class="nav-link" data-section="habeas-data">
-        <span class="nav-num">17</span> Habeas Data
+      <a href="#habeas-data-def" class="nav-link" data-section="habeas-data-def">
+        <span class="nav-num">17</span> En qué consiste Habeas Data
       </a>
-      <a href="#delito" class="nav-link" data-section="delito">
-        <span class="nav-num">18</span> El Delito
+      <a href="#delito-def" class="nav-link" data-section="delito-def">
+        <span class="nav-num">18</span> Qué es el Delito
       </a>
-      <a href="#clases-delito" class="nav-link" data-section="clases-delito">
+      <a href="#clases-delito-def" class="nav-link" data-section="clases-delito-def">
         <span class="nav-num">19</span> Clases de Delito
       </a>
-      <a href="#bien-juridico" class="nav-link" data-section="bien-juridico">
+      <a href="#bien-juridico-def" class="nav-link" data-section="bien-juridico-def">
         <span class="nav-num">20</span> Bien Jurídico Tutelado
       </a>
-      <a href="#acciones" class="nav-link" data-section="acciones">
-        <span class="nav-num">21</span> Acciones Penal y Civil
+      <a href="#bien-informatico-def" class="nav-link" data-section="bien-informatico-def">
+        <span class="nav-num">21</span> Bien de Delitos Informáticos
       </a>
-      <a href="#derecho-trabajo" class="nav-link" data-section="derecho-trabajo">
-        <span class="nav-num">22</span> Derecho de Trabajo
+      <a href="#accion-penal-finalidad" class="nav-link" data-section="accion-penal-finalidad">
+        <span class="nav-num">22</span> Finalidad de Acción Penal
       </a>
-      <a href="#norma-juridica" class="nav-link" data-section="norma-juridica">
-        <span class="nav-num">23</span> Norma Jurídica
+      <a href="#accion-civil-finalidad" class="nav-link" data-section="accion-civil-finalidad">
+        <span class="nav-num">23</span> Finalidad de Acción Civil
       </a>
-      <a href="#reflexion" class="nav-link" data-section="reflexion">
-        <span class="nav-num">24</span> Reflexión Final
+      <a href="#derecho-trabajo-def" class="nav-link" data-section="derecho-trabajo-def">
+        <span class="nav-num">24</span> Qué es Derecho de Trabajo
+      </a>
+      <a href="#utilidad-trabajo-ing" class="nav-link" data-section="utilidad-trabajo-ing">
+        <span class="nav-num">25</span> Utilidad del Derecho Laboral
+      </a>
+      <a href="#norma-delitos-inf" class="nav-link" data-section="norma-delitos-inf">
+        <span class="nav-num">26</span> Norma de Delitos Inf.
+      </a>
+      <a href="#aspecto-llamativo" class="nav-link" data-section="aspecto-llamativo">
+        <span class="nav-num">27</span> Aspecto más llamativo
       </a>
     </nav>
   </aside>
 
-  <!-- ═══════════════════════════════════════
-       MAIN CONTENT
-  ════════════════════════════════════════ -->
   <main class="main-content">
 
-    <!-- ── HEADER ── -->
     <header class="portfolio-header">
       <div class="header-inner">
         <div class="header-logo-area">
           <div class="logo-container">
             <img src="./assets/logo.svg" alt="Logo UMG" class="header-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
-            <div class="logo-placeholder" style="display:none;">
-              <span>UMG</span>
-            </div>
+            <div class="logo-placeholder" style="display:none;"><span>UMG</span></div>
           </div>
           <div class="header-meta">
             <p class="header-uni">Universidad Mariano Gálvez de Guatemala</p>
             <p class="header-campus">Centro Universitario de San Pedro, San Marcos</p>
-            <p class="header-career">Licenciatura en Ingeniería en Sistemas de Información y Ciencias de la Computación</p>
+            <p class="header-career">Licenciatura en Ingeniería en Sistemas de Información y Ciencias de Computación</p>
           </div>
         </div>
 
         <div class="header-course-info">
-          <div class="info-pill">
-            <span class="info-label">Estudiante</span>
-            <span class="info-value">Juan Diego Berdúo Témaj</span>
-          </div>
-          <div class="info-pill">
-            <span class="info-label">Carnet</span>
-            <span class="info-value">0903-25-15843</span>
-          </div>
-          <div class="info-pill">
-            <span class="info-label">Curso</span>
-            <span class="info-value">Derecho Informático</span>
-          </div>
-          <div class="info-pill">
-            <span class="info-label">Docente</span>
-            <span class="info-value">Lic. Carlos Valentín Velásquez Gónzales</span>
-          </div>
+          <div class="info-pill"><span class="info-label">Estudiante</span><span class="info-value">Juan Diego Berdúo Témaj</span></div>
+          <div class="info-pill"><span class="info-label">Carnet</span><span class="info-value">0903-25-15843</span></div>
+          <div class="info-pill"><span class="info-label">Curso</span><span class="info-value">Derecho Informático</span></div>
+          <div class="info-pill"><span class="info-label">Docente</span><span class="info-value">Lic. Carlos Valentín Velásquez Gónzales</span></div>
         </div>
 
         <div class="header-title-area">
-          <div class="title-decoration">
-            <span class="deco-line"></span>
-            <span class="deco-dot"></span>
-            <span class="deco-line"></span>
-          </div>
+          <div class="title-decoration"><span class="deco-line"></span><span class="deco-dot"></span><span class="deco-line"></span></div>
           <h1 class="main-title">Portafolio Digital</h1>
           <p class="main-subtitle">Proyecto Final</p>
-          <div class="title-decoration">
-            <span class="deco-line"></span>
-            <span class="deco-dot"></span>
-            <span class="deco-line"></span>
-          </div>
+          <div class="title-decoration"><span class="deco-line"></span><span class="deco-dot"></span><span class="deco-line"></span></div>
         </div>
       </div>
-
-      <!-- decorative shapes -->
-      <div class="header-deco header-deco--circle1"></div>
-      <div class="header-deco header-deco--circle2"></div>
-      <div class="header-deco header-deco--arc"></div>
     </header>
 
-    <!-- ══════════════════════
-         PARTE I
-    ═══════════════════════ -->
     <div class="part-divider">
       <div class="part-divider-inner">
         <span class="part-label">Parte I</span>
@@ -186,285 +154,184 @@
       </div>
     </div>
 
-    <!-- 01 · TÍTULOS DE CRÉDITO -->
     <section class="content-section" id="titulos-credito">
-      <div class="section-header">
-        <span class="section-num">01</span>
-        <h2 class="section-title">Los Títulos de Crédito</h2>
-      </div>
-
-      <div class="card card--featured">
-        <div class="card-accent card-accent--green"></div>
-        <h3 class="card-title">Concepto</h3>
-        <p>Los títulos de crédito son documentos mercantiles que incorporan un derecho literal y autónomo, el cual puede ejercerse únicamente por quien posee legítimamente el documento. Estos instrumentos facilitan las actividades comerciales porque permiten representar dinero, obligaciones o derechos de pago de manera rápida y segura. En el ámbito mercantil, los títulos de crédito funcionan como medios que agilizan las transacciones económicas, evitando en muchos casos el uso inmediato del dinero en efectivo. Su importancia radica en que brindan confianza jurídica entre las partes involucradas, ya que el documento contiene las condiciones y derechos que pueden exigirse legalmente. Entre los títulos de crédito más conocidos se encuentran el cheque, la letra de cambio y el pagaré. Además, son considerados herramientas fundamentales dentro del comercio moderno debido a que permiten la circulación del crédito y favorecen el desarrollo de actividades empresariales. Desde el punto de vista jurídico, poseen regulación específica dentro del Derecho Mercantil para garantizar su validez, circulación y cumplimiento.</p>
-      </div>
-
-      <div class="two-col">
-        <div class="card">
-          <div class="card-accent card-accent--blue"></div>
-          <h3 class="card-title">Características</h3>
-          <ul class="styled-list">
-            <li><strong>Literalidad:</strong> el derecho se limita a lo escrito en el documento.</li>
-            <li><strong>Autonomía:</strong> cada poseedor legítimo adquiere un derecho propio e independiente.</li>
-            <li><strong>Incorporación:</strong> el derecho está unido físicamente al documento.</li>
-            <li><strong>Legitimación:</strong> solo el poseedor legal puede exigir el cumplimiento.</li>
-            <li><strong>Circulación:</strong> pueden transferirse mediante endoso o entrega.</li>
-            <li><strong>Formalidad:</strong> deben cumplir requisitos establecidos por la ley.</li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <div class="card-accent card-accent--dark"></div>
-          <h3 class="card-title">Clasificación Legal</h3>
-          <div class="badge-group">
-            <span class="badge badge--green">Nominativos</span>
-            <span class="badge badge--blue">A la orden</span>
-            <span class="badge badge--dark">Al portador</span>
-            <span class="badge badge--outline">Abstractos</span>
-            <span class="badge badge--outline">Causales</span>
-          </div>
-          <p style="margin-top:1rem;">Los títulos nominativos se emiten a nombre de una persona específica y requieren endoso para transferirse. Los títulos a la orden circulan mediante endoso y entrega. Los títulos al portador pertenecen a quien los posee físicamente. Los abstractos no dependen de la causa que los originó, mientras que los causales sí mantienen relación con el negocio jurídico que les dio origen.</p>
-        </div>
-      </div>
-
-      <div class="card card--light">
-        <div class="card-accent card-accent--green"></div>
-        <h3 class="card-title">Clasificación Doctrinaria</h3>
-        <div class="icon-grid">
-          <div class="icon-item">
-            <div class="icon-box icon-box--green">💳</div>
-            <strong>Títulos de Pago</strong>
-            <p>Sirven para cancelar obligaciones. Ej: el cheque.</p>
-          </div>
-          <div class="icon-item">
-            <div class="icon-box icon-box--blue">📄</div>
-            <strong>Títulos de Crédito</strong>
-            <p>Representan una promesa de pago futuro. Ej: el pagaré.</p>
-          </div>
-          <div class="icon-item">
-            <div class="icon-box icon-box--dark">📦</div>
-            <strong>De Representación</strong>
-            <p>Otorgan derechos sobre mercancías. Ej: conocimiento de embarque.</p>
-          </div>
-          <div class="icon-item">
-            <div class="icon-box icon-box--outline">📊</div>
-            <strong>Seriales</strong>
-            <p>Forman parte de una emisión masiva. Ej: acciones de sociedades.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 02 · EL CHEQUE -->
-    <section class="content-section" id="cheque">
-      <div class="section-header">
-        <span class="section-num">02</span>
-        <h2 class="section-title">El Cheque</h2>
-      </div>
-
+      <div class="section-header"><span class="section-num">01</span><h2 class="section-title">Los títulos de crédito</h2></div>
+      
       <div class="card card--featured">
         <div class="card-accent card-accent--blue"></div>
-        <h3 class="card-title">Creación y Forma</h3>
-        <p>El cheque es un título de crédito mediante el cual una persona llamada <strong>librador</strong> ordena a una institución bancaria pagar una determinada cantidad de dinero a otra persona llamada <strong>beneficiario</strong>. Para que un cheque sea válido debe cumplir ciertos requisitos legales, entre ellos: la palabra "cheque", la fecha y lugar de emisión, la orden incondicional de pago, el nombre del banco librado, la cantidad de dinero y la firma del librador. La creación del cheque implica la existencia previa de fondos suficientes en la cuenta bancaria del emisor.</p>
+        <h3 class="card-title">Concepto</h3>
+        <p>Los títulos de crédito son documentos mercantiles que incorporan un derecho literal y autónomo, el cual puede ejercerse únicamente por quien posee legítimamente el documento. Estos instrumentos facilitan las actividades comerciales porque permiten representar dinero, obligaciones o derechos de pago de manera rápida y segura. En el ámbito mercantil, los títulos de crédito funcionan como medios que agilizan las transacciones económicas, evitando en muchos casos el uso inmediato del dinero en efectivo. Su importancia radica en que brindan confianza jurídica entre las partes involucradas, ya que el documento contiene las condiciones y derechos que pueden exigirse legalmente. Entre los títulos de crédito más conocidos se encuentran el cheque, la letra de cambio y el pagaré. Además, son considerados herramientas fundamentales dentro del comercio moderno debido a que permiten la circulación del crédito y favorecen el desarrollo de actividadesempresariales. Desde el punto de vista jurídico, poseen regulación específica dentro del Derecho Mercantil para garantizar su validez, circulación y cumplimiento.</p>
       </div>
 
       <div class="card">
         <div class="card-accent card-accent--green"></div>
-        <h3 class="card-title">Presentación y Pago</h3>
-        <p>El cheque debe presentarse para su cobro dentro de los plazos establecidos por la ley, ya que de lo contrario puede perder eficacia jurídica. El banco tiene la obligación de verificar la autenticidad del documento y la existencia de fondos suficientes antes de realizar el pago. Si no existen fondos disponibles, el cheque puede ser rechazado, generando consecuencias legales para el librador. La presentación puede hacerse directamente en ventanilla o mediante depósito bancario.</p>
+        <h3 class="card-title">Características</h3>
+        <p>Los títulos de crédito poseen varias características esenciales que los distinguen de otros documentos jurídicos. Una de ellas es la literalidad, que significa que el derecho contenido en el documento se limita exactamente a lo escrito en él. Otra característica es la autonomía, ya que cada poseedor legítimo adquiere un derecho propio e independiente. También presentan incorporación, porque el derecho está unido físicamente al documento y no puede ejercerse sin él. La legitimación permite que únicamente el poseedor legal pueda exigir el cumplimiento de la obligación. Asimismo, poseen circulación, debido a que pueden transferirse de una persona a otra mediante endoso o entrega, dependiendo del tipo de título. Son documentos formales, ya que deben cumplir requisitos establecidos por la ley para tener validez jurídica. Estas características convierten a los títulos de crédito en instrumentos seguros y prácticos para las actividades comerciales y financieras.</p>
       </div>
 
-      <h3 class="subsection-title">Modalidades del Cheque</h3>
-      <div class="modalidades-grid">
+      <div class="two-col">
+        <div class="card">
+          <div class="card-accent card-accent--dark"></div>
+          <h3 class="card-title">Clasificación legal</h3>
+          <p>Legalmente, los títulos de crédito pueden clasificarse según la forma en que circulan. Existen títulos nominativos, los cuales se emiten a nombre de una persona específica y requieren endoso para transferirse. También están los títulos a la orden, que pueden circular mediante endoso y entrega del documento. Finalmente, se encuentran los títulos al portador, que pertenecen a quien los posee físicamente y se transmiten simplemente mediante entrega material. Otra clasificación legal importante distingue entre títulos abstractos y causales. Los abstractos no dependen de la causa que originó el documento, mientras que los causales sí mantienen relación con el negocio jurídico que les dio origen. Esta clasificación es relevante porque determina la forma en que pueden ejercerse los derechos y las defensas legales relacionadas con el documento.</p>
+        </div>
 
+        <div class="card">
+          <div class="card-accent card-accent--blue"></div>
+          <h3 class="card-title">Clasificación doctrinaria</h3>
+          <p>Doctrinariamente, los títulos de crédito pueden clasificarse según diversos criterios académicos y jurídicos. Algunos autores los clasifican por su función económica, distinguiendo títulos de pago, de crédito y de representación de mercancías. Los títulos de pago sirven para cancelar obligaciones, como el cheque; los de crédito representan una promesa de pago futuro, como el pagaré; y los de representación otorgan derechos sobre bienes o mercancías, como el conocimiento de embarque. También pueden clasificarse según su estructura en títulos individuales y seriales. Los individuales se emiten de forma única, mientras que los seriales forman parte de una emisión masiva, como las acciones de sociedades. Esta clasificación doctrinaria ayuda a comprender mejor el papel económico y jurídico de cada tipo de título dentro de las relaciones comerciales.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section" id="cheque">
+      <div class="section-header"><span class="section-num">02</span><h2 class="section-title">El cheque</h2></div>
+      
+      <div class="card card--featured">
+        <div class="card-accent card-accent--green"></div>
+        <h3 class="card-title">Creación y forma</h3>
+        <p>El cheque es un título de crédito mediante el cual una persona llamada librador ordena a una institución bancaria pagar una determinada cantidad de dinero a otra persona llamada beneficiario. Para que un cheque sea válido debe cumplir ciertos requisitos legales, entre ellos: la palabra “cheque”, la fecha y lugar de emisión, la orden incondicional de pago, el nombre del banco librado, la cantidad de dinero y la firma del librador. La creación del cheque implica la existencia previa de fondos suficientes en la cuenta bancaria del emisor. Este documento constituye un instrumento de pago ampliamente utilizado en operaciones comerciales debido a su practicidad y seguridad. Además, la ley establece ciertas formalidades que buscan evitar fraudes y proteger tanto al beneficiario como a las entidades financieras involucradas.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-accent card-accent--dark"></div>
+        <h3 class="card-title">Presentación y pago</h3>
+        <p>El cheque debe presentarse para su cobro dentro de los plazos establecidos por la ley, ya que de lo contrario puede perder eficacia jurídica. Generalmente, si el cheque es emitido y pagadero en el mismo país, debe presentarse dentro de un tiempo determinado contado desde su emisión. El banco tiene la obligación de verificar la autenticidad del documento y la existencia de fondos suficientes antes de realizar el pago. Si no existen fondos disponibles, el cheque puede ser rechazado, generando consecuencias legales para el librador. La presentación puede hacerse directamente en ventanilla o mediante depósito bancario. En la práctica comercial, el cheque sigue siendo importante aunque muchos pagos electrónicos han reducido parcialmente su uso tradicional.</p>
+      </div>
+
+      <h3 class="subsection-title">Modalidades del cheque</h3>
+      <div class="modalidades-grid">
         <div class="modalidad-card">
           <div class="modalidad-icon">✦</div>
-          <h4>Cheque Cruzado</h4>
-          <p>Contiene dos líneas paralelas en el anverso. Limita el cobro únicamente a través de una institución bancaria, aumentando la seguridad y reduciendo el riesgo de fraude.</p>
-          <div class="example-box">
-            <span class="example-label">Ejemplo</span>
-            <p>Un comerciante emite un cheque cruzado a nombre de un proveedor para que solo pueda depositarlo en su cuenta bancaria.</p>
-          </div>
+          <h4>Cheque cruzado</h4>
+          <p>El cheque cruzado contiene dos líneas paralelas en el anverso del documento. Esta modalidad limita el cobro únicamente a través de una institución bancaria, aumentando la seguridad y reduciendo el riesgo de robo o fraude.</p>
+          <div class="example-box"><span class="example-label">Ejemplo</span><p>Un comerciante emite un cheque cruzado a nombre de un proveedor para que este solo pueda depositarlo en su cuenta bancaria.</p></div>
         </div>
 
         <div class="modalidad-card">
           <div class="modalidad-icon">◈</div>
-          <h4>Para Abono en Cuenta</h4>
-          <p>Incluye la expresión "para abono en cuenta", lo que significa que no puede cobrarse en efectivo y únicamente puede depositarse en una cuenta bancaria del beneficiario.</p>
-          <div class="example-box">
-            <span class="example-label">Ejemplo</span>
-            <p>Una empresa paga salarios mediante cheques con la leyenda "para abono en cuenta".</p>
-          </div>
+          <h4>Cheque para abono en cuenta</h4>
+          <p>Este cheque incluye la expresión “para abono en cuenta”, lo que significa que no puede cobrarse en efectivo y únicamente puede depositarse en una cuenta bancaria del beneficiario.</p>
+          <div class="example-box"><span class="example-label">Ejemplo</span><p>Una empresa paga salarios mediante cheques con la leyenda “para abono en cuenta”.</p></div>
         </div>
 
         <div class="modalidad-card">
           <div class="modalidad-icon">◉</div>
-          <h4>Cheque Certificado</h4>
-          <p>El banco certifica que existen fondos suficientes para cubrir el pago del cheque. Esto brinda mayor seguridad al beneficiario.</p>
-          <div class="example-box">
-            <span class="example-label">Ejemplo</span>
-            <p>Una persona utiliza un cheque certificado para comprar un vehículo.</p>
-          </div>
+          <h4>Cheque certificado</h4>
+          <p>En esta modalidad, el banco certifica que existen fondos suficientes para cubrir el pago del cheque. Esto brinda mayor seguridad al beneficiario.</p>
+          <div class="example-box"><span class="example-label">Ejemplo</span><p>Una persona utiliza un cheque certificado para comprar un vehículo.</p></div>
         </div>
 
         <div class="modalidad-card">
           <div class="modalidad-icon">⬡</div>
-          <h4>Cheque de Caja</h4>
+          <h4>Cheque de caja</h4>
           <p>Es emitido directamente por un banco con cargo a sus propios fondos, por lo que el banco se convierte en responsable del pago.</p>
-          <div class="example-box">
-            <span class="example-label">Ejemplo</span>
-            <p>Un estudiante utiliza un cheque de caja para pagar matrícula universitaria.</p>
-          </div>
+          <div class="example-box"><span class="example-label">Ejemplo</span><p>Un estudiante utiliza un cheque de caja para pagar matrícula universitaria.</p></div>
         </div>
 
         <div class="modalidad-card">
           <div class="modalidad-icon">✈</div>
-          <h4>Cheque de Viajero</h4>
-          <p>Emitido por instituciones financieras para ser utilizado durante viajes nacionales o internacionales. Puede reemplazarse en caso de pérdida o robo.</p>
-          <div class="example-box">
-            <span class="example-label">Ejemplo</span>
-            <p>Un turista compra cheques de viajero para evitar portar grandes cantidades de efectivo.</p>
-          </div>
+          <h4>Cheque de viajero</h4>
+          <p>Es un cheque emitido por instituciones financieras para ser utilizado durante viajes nacionales o internacionales. Puede reemplazarse en caso de pérdida o robo.</p>
+          <div class="example-box"><span class="example-label">Ejemplo</span><p>Un turista compra cheques de viajero para evitar portar grandes cantidades de efectivo.</p></div>
         </div>
 
         <div class="modalidad-card">
           <div class="modalidad-icon">◎</div>
-          <h4>Con Provisión Garantizada</h4>
+          <h4>Cheque con provisión garantizada</h4>
           <p>El banco garantiza previamente la existencia de fondos suficientes hasta cierta cantidad establecida.</p>
-          <div class="example-box">
-            <span class="example-label">Ejemplo</span>
-            <p>Una empresa utiliza cheques con provisión garantizada para pagos frecuentes a proveedores.</p>
-          </div>
+          <div class="example-box"><span class="example-label">Ejemplo</span><p>Una empresa utiliza cheques con provisión garantizada para realizar pagos frecuentes a proveedores.</p></div>
         </div>
 
         <div class="modalidad-card">
           <div class="modalidad-icon">☰</div>
-          <h4>Cheque con Talón</h4>
-          <p>Incluye un comprobante desprendible donde el librador puede anotar información adicional sobre el pago realizado.</p>
-          <div class="example-box">
-            <span class="example-label">Ejemplo</span>
-            <p>Un negocio utiliza cheques con talón para llevar control interno de sus gastos mensuales.</p>
-          </div>
+          <h4>Cheque con talón</h4>
+          <p>Es un cheque que incluye un comprobante desprendible donde el librador puede anotar información adicional sobre el pago realizado.</p>
+          <div class="example-box"><span class="example-label">Ejemplo</span><p>Un negocio utiliza cheques con talón para llevar control interno de sus gastos mensuales.</p></div>
         </div>
-
       </div>
     </section>
 
-    <!-- 03 · CONTRATOS MERCANTILES -->
     <section class="content-section" id="contratos">
-      <div class="section-header">
-        <span class="section-num">03</span>
-        <h2 class="section-title">Contratos Mercantiles</h2>
-      </div>
-
+      <div class="section-header"><span class="section-num">03</span><h2 class="section-title">Contratos Mercantiles</h2></div>
+      
       <div class="card card--featured">
-        <div class="card-accent card-accent--dark"></div>
-        <h3 class="card-title">Características y Clasificación</h3>
-        <p>Los contratos mercantiles son acuerdos de voluntad celebrados entre personas físicas o jurídicas con fines comerciales. Su principal finalidad es regular actividades económicas y comerciales dentro del tráfico mercantil. Se caracterizan por ser onerosos, consensuales y generalmente bilaterales, ya que generan obligaciones para ambas partes. Además, suelen regirse por principios como la buena fe, rapidez y flexibilidad comercial.</p>
-        <div class="badge-group" style="margin-top:1rem;">
-          <span class="badge badge--green">Típicos</span>
-          <span class="badge badge--outline">Atípicos</span>
-          <span class="badge badge--blue">Colaboración</span>
-          <span class="badge badge--outline">Transferencia</span>
-          <span class="badge badge--dark">Garantía</span>
-          <span class="badge badge--outline">Prestación de Servicios</span>
-        </div>
+        <div class="card-accent card-accent--blue"></div>
+        <h3 class="card-title">Características y clasificación</h3>
+        <p>Los contratos mercantiles son acuerdos de voluntad celebrados entre personas físicas o jurídicas con fines comerciales. Su principal finalidad es regular actividades económicas y comerciales dentro del tráfico mercantil. Se caracterizan por ser onerosos, consensuales y generalmente bilaterales, ya que generan obligaciones para ambas partes. Además, suelen regirse por principios como la buena fe, rapidez y flexibilidad comercial. Los contratos mercantiles pueden clasificarse en típicos y atípicos. Los típicos son aquellos regulados expresamente por la ley, mientras que los atípicos surgen de las necesidades comerciales modernas. También pueden clasificarse en contratos de colaboración, transferencia, garantía y prestación de servicios. Su importancia radica en que proporcionan seguridad jurídica a las relaciones comerciales y facilitan el funcionamiento del mercado.</p>
       </div>
 
       <div class="two-col">
         <div class="card">
-          <div class="card-accent card-accent--green"></div>
-          <h3 class="card-title">Contrato de Suministro</h3>
+          <div class="card-accent card-accent--dark"></div>
+          <h3 class="card-title">Contrato de suministro</h3>
           <table class="def-table">
-            <tr><td class="def-term">Concepto</td><td>Una persona se obliga a proporcionar bienes o servicios de manera periódica o continua a otra, a cambio de un precio.</td></tr>
-            <tr><td class="def-term">Función</td><td>Asegurar el abastecimiento constante de productos o servicios necesarios para actividades comerciales o industriales.</td></tr>
-            <tr><td class="def-term">Caracteres</td><td>Bilateral, oneroso, consensual y de tracto sucesivo.</td></tr>
-            <tr><td class="def-term">Elementos</td><td>Partes contratantes, objeto del suministro, precio y plazo.</td></tr>
-            <tr><td class="def-term">Plazo</td><td>Por tiempo determinado o indefinido, según las necesidades de las partes.</td></tr>
-            <tr><td class="def-term">Suspensión</td><td>Ocurre cuando una de las partes incumple temporalmente sus obligaciones.</td></tr>
-            <tr><td class="def-term">Denuncia</td><td>Manifestación unilateral de una parte para dar por terminado el contrato conforme a las condiciones pactadas.</td></tr>
-            <tr><td class="def-term">Terminación</td><td>Por vencimiento del plazo, incumplimiento, mutuo acuerdo o causas legales.</td></tr>
+            <tr><td class="def-term">Concepto</td><td>El contrato de suministro es aquel mediante el cual una persona se obliga a proporcionar bienes o servicios de manera periódica o continua a otra persona, a cambio de un precio.</td></tr>
+            <tr><td class="def-term">Función</td><td>Su función principal es asegurar el abastecimiento constante de productos o servicios necesarios para actividades comerciales o industriales.</td></tr>
+            <tr><td class="def-term">Caracteres</td><td>Se caracteriza por ser bilateral, oneroso, consensual y de tracto sucesivo, ya que sus efectos se desarrollan durante cierto período.</td></tr>
+            <tr><td class="def-term">Elementos</td><td>Sus elementos principales son las partes contratantes, el objeto del suministro, el precio y el plazo establecido.</td></tr>
+            <tr><td class="def-term">Plazo</td><td>Puede celebrarse por tiempo determinado o indefinido, según las necesidades de las partes.</td></tr>
+            <tr><td class="def-term">Suspensión</td><td>La suspensión puede ocurrir cuando una de las partes incumple temporalmente sus obligaciones.</td></tr>
+            <tr><td class="def-term">Denuncia</td><td>La denuncia consiste en la manifestación unilateral de una de las partes para dar por terminado el contrato conforme a las condiciones pactadas.</td></tr>
+            <tr><td class="def-term">Terminación</td><td>El contrato termina por vencimiento del plazo, incumplimiento, mutuo acuerdo o causas legales establecidas.</td></tr>
           </table>
         </div>
 
         <div class="card">
-          <div class="card-accent card-accent--blue"></div>
-          <h3 class="card-title">Contrato de Edición</h3>
+          <div class="card-accent card-accent--green"></div>
+          <h3 class="card-title">Contrato de edición</h3>
           <table class="def-table">
-            <tr><td class="def-term">Concepto</td><td>El autor de una obra concede a un editor el derecho de reproducir y distribuir dicha obra.</td></tr>
-            <tr><td class="def-term">Caracteres</td><td>Consensual, bilateral y oneroso. Implica derechos de propiedad intelectual.</td></tr>
-            <tr><td class="def-term">Elementos</td><td>El autor, el editor y la obra objeto de publicación.</td></tr>
-            <tr><td class="def-term">D° de Autor</td><td>Relaciona directamente los derechos patrimoniales y morales del autor sobre su obra.</td></tr>
-            <tr><td class="def-term">D° del Titular</td><td>Recibir remuneración y reconocimiento; debe entregar el material pactado.</td></tr>
-            <tr><td class="def-term">D° del Editor</td><td>Reproducir y comercializar la obra, respetando la integridad del contenido y pagando la compensación correspondiente.</td></tr>
+            <tr><td class="def-term">Concepto</td><td>Es el contrato mediante el cual el autor de una obra concede a un editor el derecho de reproducir y distribuir dicha obra.</td></tr>
+            <tr><td class="def-term">Caracteres</td><td>Se caracteriza por ser consensual, bilateral y oneroso. Además, implica derechos relacionados con la propiedad intelectual.</td></tr>
+            <tr><td class="def-term">Elementos</td><td>Participan el autor, el editor y la obra objeto de publicación.</td></tr>
+            <tr><td class="def-term">Integración del derecho de autor</td><td>Este contrato se relaciona directamente con los derechos patrimoniales y morales del autor sobre su obra.</td></tr>
+            <tr><td class="def-term">Derechos y obligaciones del titular</td><td>El autor tiene derecho a recibir remuneración y reconocimiento sobre su obra, mientras que debe entregar el material pactado.</td></tr>
+            <tr><td class="def-term">Derechos y obligaciones del editor</td><td>El editor tiene derecho a reproducir y comercializar la obra, pero debe respetar la integridad del contenido y pagar la compensación correspondiente al autor.</td></tr>
           </table>
         </div>
       </div>
     </section>
 
-    <!-- 04 · LA EMPRESA MERCANTIL -->
     <section class="content-section" id="empresa">
-      <div class="section-header">
-        <span class="section-num">04</span>
-        <h2 class="section-title">La Empresa Mercantil</h2>
-      </div>
-
+      <div class="section-header"><span class="section-num">04</span><h2 class="section-title">La empresa mercantil</h2></div>
+      
       <div class="card card--featured">
-        <div class="card-accent card-accent--green"></div>
+        <div class="card-accent card-accent--dark"></div>
         <h3 class="card-title">Concepto</h3>
-        <p>La empresa mercantil es una organización económica integrada por recursos humanos, materiales y financieros destinada a la producción o comercialización de bienes y servicios con fines de lucro. Constituye uno de los elementos fundamentales de la actividad económica moderna, ya que permite la generación de empleo, riqueza y desarrollo comercial. Jurídicamente, la empresa es considerada una unidad organizada que desarrolla actividades mercantiles de forma habitual.</p>
+        <p>La empresa mercantil es una organización económica integrada por recursos humanos, materiales y financieros destinada a la producción o comercialización de bienes y servicios con fines de lucro. Constituye uno de los elementos fundamentales de la actividad económica moderna, ya que permite la generación de empleo, riqueza y desarrollo comercial. Jurídicamente, la empresa es considerada una unidad organizada que desarrolla actividades mercantiles de forma habitual. Su funcionamiento requiere coordinación administrativa, recursos tecnológicos y estrategias comerciales que permitan alcanzar objetivos económicos específicos.</p>
       </div>
 
       <div class="card">
-        <div class="card-accent card-accent--dark"></div>
-        <h3 class="card-title">Elementos de la Empresa</h3>
-        <div class="icon-grid">
-          <div class="icon-item">
-            <div class="icon-box icon-box--green">🏢</div>
-            <strong>Materiales</strong>
-            <p>Bienes muebles, inmuebles, maquinaria y herramientas.</p>
-          </div>
-          <div class="icon-item">
-            <div class="icon-box icon-box--blue">👥</div>
-            <strong>Humanos</strong>
-            <p>Propietarios, administradores y trabajadores.</p>
-          </div>
-          <div class="icon-item">
-            <div class="icon-box icon-box--dark">💡</div>
-            <strong>Inmateriales</strong>
-            <p>Clientela, prestigio comercial, marcas y propiedad intelectual.</p>
-          </div>
-        </div>
+        <div class="card-accent card-accent--blue"></div>
+        <h3 class="card-title">Elementos de la empresa</h3>
+        <p>Los elementos de la empresa mercantil pueden clasificarse en materiales e inmateriales. Entre los materiales se encuentran los bienes muebles, inmuebles, maquinaria y herramientas. Los elementos humanos incluyen propietarios, administradores y trabajadores. También existen elementos inmateriales como la clientela, prestigio comercial, marcas y derechos de propiedad intelectual. Todos estos componentes interactúan para permitir el correcto funcionamiento de la empresa y el cumplimiento de sus objetivos comerciales.</p>
       </div>
 
-      <h3 class="subsection-title">Signos Distintivos y Patentes</h3>
+      <h3 class="subsection-title">Signos distintivos y Patentes</h3>
       <div class="two-col">
         <div class="card">
-          <div class="card-accent card-accent--blue"></div>
-          <h3 class="card-title">Signos Distintivos</h3>
-          <ul class="styled-list">
-            <li><strong>Nombre comercial:</strong> denominación que identifica a la empresa en el mercado y permite diferenciarla de otras.</li>
-            <li><strong>Marcas:</strong> signos que distinguen productos o servicios específicos y otorgan exclusividad legal a su titular.</li>
-            <li><strong>Expresiones de propaganda:</strong> frases, imágenes o símbolos publicitarios para atraer consumidores y fortalecer la identidad comercial.</li>
-          </ul>
+          <div class="card-accent card-accent--green"></div>
+          <h3 class="card-title">Signos distintivos de la empresa</h3>
+          <table class="def-table">
+            <tr><td class="def-term">Nombre comercial</td><td>Es la denominación que identifica a una empresa dentro del mercado y permite diferenciarla de otras.</td></tr>
+            <tr><td class="def-term">Las marcas</td><td>Son signos que distinguen productos o servicios específicos y otorgan exclusividad legal a su titular.</td></tr>
+            <tr><td class="def-term">Expresiones o señales de propaganda</td><td>Son frases, imágenes o símbolos utilizados con fines publicitarios para atraer consumidores y fortalecer la identidad comercial.</td></tr>
+          </table>
         </div>
 
         <div class="card">
-          <div class="card-accent card-accent--green"></div>
-          <h3 class="card-title">Las Patentes</h3>
-          <ul class="styled-list">
-            <li><strong>Efectos:</strong> conceden al inventor el derecho exclusivo de explotar una invención durante un período determinado.</li>
-            <li><strong>Nulidad:</strong> puede declararse cuando fue otorgada incumpliendo requisitos legales o mediante información falsa.</li>
-            <li><strong>Caducidad:</strong> ocurre cuando vence el plazo de protección o el titular incumple obligaciones legales.</li>
-            <li><strong>Clases:</strong> patentes de invención, modelos de utilidad y diseños industriales.</li>
-          </ul>
+          <div class="card-accent card-accent--dark"></div>
+          <h3 class="card-title">Las patentes</h3>
+          <table class="def-table">
+            <tr><td class="def-term">Efectos de la patente</td><td>La patente concede al inventor el derecho exclusivo de explotar una invención durante un período determinado, impidiendo que terceros la utilicen sin autorización.</td></tr>
+            <tr><td class="def-term">Nulidad de la patente</td><td>Puede declararse cuando la patente fue otorgada incumpliendo requisitos legales o mediante información falsa.</td></tr>
+            <tr><td class="def-term">Caducidad de la patente</td><td>Ocurre cuando vence el plazo de protección o el titular incumple obligaciones legales relacionadas con la patente.</td></tr>
+            <tr><td class="def-term">Clases de patente</td><td>Existen patentes de invención, modelos de utilidad y diseños industriales. Cada una protege diferentes tipos de creaciones tecnológicas o industriales dentro del ámbito comercial y jurídico.</td></tr>
+          </table>
         </div>
       </div>
     </section>
 
-    <!-- ══════════════════════
-         PARTE II
-    ═══════════════════════ -->
     <div class="part-divider part-divider--alt">
       <div class="part-divider-inner">
         <span class="part-label">Parte II</span>
@@ -472,529 +339,302 @@
       </div>
     </div>
 
-    <!-- 05 · DEFINICIÓN DE DERECHO -->
-    <section class="content-section" id="derecho">
-      <div class="section-header">
-        <span class="section-num">05</span>
-        <h2 class="section-title">Definición de Derecho</h2>
-      </div>
+    <section class="content-section" id="definicion-derecho">
+      <div class="section-header"><span class="section-num">05</span><h2 class="section-title">Definición de Derecho</h2></div>
       <div class="card card--featured">
         <div class="card-accent card-accent--blue"></div>
         <div class="etymology-banner">
           <span class="etym-label">Etimología</span>
-          <span class="etym-text">Del latín <em>directum</em> — "dirigir" o "encaminar"</span>
+          <span class="etym-text">El Derecho proviene del latín <em>directum</em>, que significa "dirigir" o "encaminar".</span>
         </div>
-        <p style="margin-top:1.25rem;">El Derecho se define como el conjunto de normas, principios y definiciones creado y tutelado por el poder público con el objetivo de educar al hombre en su ámbito social, estudiar su conducta y regular la convivencia entre los seres humanos. Surge como un medio efectivo para solucionar conflictos y garantizar una convivencia correcta entre los individuos mediante el establecimiento de normas de castigo o sanción.</p>
+        <p style="margin-top:1rem;">Desde un punto de vista doctrinario y social, se define como el conjunto de normas, principios y definiciones creado y tutelado por el poder público con el objetivo de educar al hombre en su ámbito social, estudiar su conducta y regular la convivencia entre los seres humanos. Surge como un medio efectivo para solucionar conflictos y garantizar una convivencia correcta entre los individuos mediante el establecimiento de normas de castigo o sanción.</p>
       </div>
     </section>
 
-    <!-- 06 · RAMAS DEL DERECHO -->
-    <section class="content-section" id="ramas">
-      <div class="section-header">
-        <span class="section-num">06</span>
-        <h2 class="section-title">Ramas del Derecho</h2>
-      </div>
-      <div class="two-col">
-        <div class="card">
-          <div class="card-accent card-accent--dark"></div>
-          <h3 class="card-title">Derecho Público <em>(ius publicum)</em></h3>
-          <p>Regula las relaciones y funciones del Estado, así como las relaciones de este con los particulares.</p>
-          <ul class="styled-list" style="margin-top:.75rem;">
-            <li>Derecho Constitucional</li>
-            <li>Derecho Administrativo</li>
-            <li>Derecho Procesal</li>
-            <li>Derecho Penal</li>
-            <li>Derecho Fiscal</li>
-            <li>Derecho Internacional</li>
-          </ul>
-        </div>
-        <div class="card">
-          <div class="card-accent card-accent--green"></div>
-          <h3 class="card-title">Nuevas Disciplinas</h3>
-          <div class="highlight-block highlight-block--green">
-            <strong>Derecho Aéreo</strong>
-            <p>Encargado de normar las peculiaridades de la navegación aérea, las aeronaves y el espacio aéreo para solucionar problemas y daños derivados de este servicio.</p>
-          </div>
-          <div class="highlight-block highlight-block--blue" style="margin-top:1rem;">
-            <strong>Derecho Ecológico</strong>
-            <p>Enfocado en regular las relaciones que surgen entre el ser humano y la naturaleza, buscando proteger el ecosistema ante los efectos del cambio climatológico.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 07 · CIBERNÉTICA -->
-    <section class="content-section" id="cibernetica">
-      <div class="section-header">
-        <span class="section-num">07</span>
-        <h2 class="section-title">Definición de la Cibernética</h2>
-      </div>
-      <div class="card card--featured">
-        <div class="card-accent card-accent--green"></div>
-        <div class="etymology-banner">
-          <span class="etym-label">Etimología</span>
-          <span class="etym-text">Del griego <em>kibernetes</em> (piloto) y <em>kibernes</em> (gobernar)</span>
-        </div>
-        <p style="margin-top:1.25rem;">La Cibernética es la ciencia interdisciplinaria que estudia de forma comparativa los sistemas de comunicación, de regulación automática y de control tanto en los seres vivos como en las máquinas. Se ocupa de los fenómenos de control y comunicación mediante el uso de métodos científicos para explicar fenómenos sociales o naturales, traduciéndose en la construcción de instrumentos o máquinas (inclusive Inteligencia Artificial) que simulen o reproduzcan de forma sintética la inteligencia y actividades del hombre.</p>
-      </div>
-    </section>
-
-    <!-- 08 · INFORMÁTICA -->
-    <section class="content-section" id="informatica">
-      <div class="section-header">
-        <span class="section-num">08</span>
-        <h2 class="section-title">Definición de la Informática</h2>
-      </div>
-      <div class="card card--featured">
-        <div class="card-accent card-accent--blue"></div>
-        <div class="etymology-banner">
-          <span class="etym-label">Composición</span>
-          <span class="etym-text"><em>Información</em> + <em>Automática</em></span>
-        </div>
-        <p style="margin-top:1.25rem;">La Informática, también denominada "computación", es la ciencia que administra métodos, técnicas y procesos orientados a almacenar, procesar y transmitir información y datos en formato digital utilizando sistemas computacionales. Para lograr su fin, emplea sistemas que interactúan de forma conjunta a través de:</p>
-        <div class="icon-grid" style="margin-top:1rem;">
-          <div class="icon-item">
-            <div class="icon-box icon-box--dark">🖥️</div>
-            <strong>Hardware</strong>
-            <p>Medios físicos del sistema.</p>
-          </div>
-          <div class="icon-item">
-            <div class="icon-box icon-box--green">💾</div>
-            <strong>Software</strong>
-            <p>Medios lógicos del sistema.</p>
-          </div>
-          <div class="icon-item">
-            <div class="icon-box icon-box--blue">🧑‍💻</div>
-            <strong>Humanware</strong>
-            <p>Las personas que los programan o usan.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 09 · RELACIÓN DERECHO E INFORMÁTICA -->
-    <section class="content-section" id="relacion">
-      <div class="section-header">
-        <span class="section-num">09</span>
-        <h2 class="section-title">Relación entre el Derecho y la Informática</h2>
-      </div>
-      <div class="card card--featured">
-        <div class="card-accent card-accent--dark"></div>
-        <p>La relación entre el Derecho y la Informática es estrecha y de carácter multidisciplinario. Dado que la informática permite el almacenamiento y procesamiento masivo de datos digitales, el Derecho interviene para regular la conducta de los hombres en el uso de estas tecnologías, previniendo la violación de derechos fundamentales.</p>
-      </div>
-      <div class="two-col">
-        <div class="card card--highlight-green">
-          <div class="card-accent card-accent--green"></div>
-          <h3 class="card-title">Informática Jurídica</h3>
-          <p>Se presenta cuando el <strong>Derecho utiliza a la informática</strong> de forma instrumental, es decir, como una herramienta y soporte para optimizar el diseño, compilación, resguardo y automatización de la información y los procesos legales.</p>
-        </div>
-        <div class="card card--highlight-blue">
-          <div class="card-accent card-accent--blue"></div>
-          <h3 class="card-title">Derecho Informático</h3>
-          <p>Ocurre cuando el <strong>Derecho toma a la informática como su objeto de estudio</strong> para crear un marco regulador de sus actividades, dictando leyes y principios aplicables a los hechos y actos derivados de la tecnología.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- 10 · CLASIFICACIÓN DE LA INFORMÁTICA JURÍDICA -->
-    <section class="content-section" id="clasificacion-ij">
-      <div class="section-header">
-        <span class="section-num">10</span>
-        <h2 class="section-title">Clasificación de la Informática Jurídica</h2>
-      </div>
-      <div class="card card--light">
-        <p>La informática jurídica es el conjunto de técnicas instrumentales de almacenamiento y recuperación de datos destinadas a sustituir la actividad rutinaria del hombre en sus labores de localización de información jurídica. Se clasifica formalmente en tres grandes ramas:</p>
-      </div>
-      <div class="three-col" style="margin-top:1.5rem;">
-        <div class="card">
-          <div class="card-accent card-accent--green"></div>
-          <div class="card-num-badge">I</div>
-          <h3 class="card-title">De Gestión</h3>
-          <p>También llamada ofimática, burótica o de administración. Consiste en la automatización de los procesos repetitivos, burocráticos y rutinarios dentro de la administración judicial, oficinas de abogados, notarías o el ámbito público.</p>
-        </div>
-        <div class="card">
-          <div class="card-accent card-accent--blue"></div>
-          <div class="card-num-badge">II</div>
-          <h3 class="card-title">Documental</h3>
-          <p>Es la automatización del conocimiento jurídico que proviene de diversas fuentes legislativas, jurisprudenciales y doctrinales. Ha sido la de mayor desarrollo histórico. Permite recuperar textos legales completos mediante criterios de búsqueda estructurados.</p>
-        </div>
-        <div class="card">
-          <div class="card-accent card-accent--dark"></div>
-          <div class="card-num-badge">III</div>
-          <h3 class="card-title">Decisional</h3>
-          <p>Va más allá de la simple recuperación de información; consiste en la automatización de las fuentes de producción jurídica mediante el auxilio de ordenadores e Inteligencia Artificial para la resolución automática de casos.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- 11 · DERECHO INFORMÁTICO -->
-    <section class="content-section" id="derecho-informatico">
-      <div class="section-header">
-        <span class="section-num">11</span>
-        <h2 class="section-title">Definición de Derecho Informático</h2>
-      </div>
-      <div class="card card--featured">
-        <div class="card-accent card-accent--green"></div>
-        <p>Es considerado una materia inequívocamente jurídica y autónoma en su estudio. Se define como el <strong>conjunto de leyes, normas, jurisprudencia y principios aplicables a los hechos y actos jurídicos derivados de la informática y la telemática</strong>. A diferencia de la informática jurídica (que usa la computadora como herramienta), el Derecho Informático toma a la tecnología como su objeto de estudio y regulación.</p>
-        <p style="margin-top:1rem;">Su propósito es regular los efectos jurídicos del uso de las Nuevas Tecnologías de la Información y la Comunicación (NTIC), abarcando áreas que van desde la protección de datos, la privacidad y el comercio electrónico, hasta la propiedad intelectual del software y la persecución de delitos informáticos.</p>
-      </div>
-    </section>
-
-    <!-- 12 · CONTRATO ELECTRÓNICO -->
-    <section class="content-section" id="contrato-electronico">
-      <div class="section-header">
-        <span class="section-num">12</span>
-        <h2 class="section-title">El Contrato Electrónico</h2>
-      </div>
-      <div class="card card--featured">
-        <div class="card-accent card-accent--blue"></div>
-        <h3 class="card-title">Concepto</h3>
-        <p>Un contrato electrónico es todo acuerdo de voluntades celebrado sin la presencia física simultánea de las partes contratantes. Las partes prestan su consentimiento tanto en el origen como en el destino mediante el uso de equipos electrónicos destinados al tratamiento y almacenaje de datos, los cuales se encuentran interconectados por medio de cables, medios ópticos o cualquier otro sistema electromagnético.</p>
-      </div>
+    <section class="content-section" id="ramas-derecho">
+      <div class="section-header"><span class="section-num">06</span><h2 class="section-title">Ramas del Derecho</h2></div>
       <div class="card">
-        <div class="card-accent card-accent--dark"></div>
-        <h3 class="card-title">Características Doctrinarias</h3>
-        <div class="caracteristica-list">
-          <div class="caracteristica-item">
-            <span class="caract-badge caract-badge--green">Complejo</span>
-            <p>Puede involucrar o combinar diversos tipos de prestaciones y contratos.</p>
-          </div>
-          <div class="caracteristica-item">
-            <span class="caract-badge caract-badge--blue">Atípico</span>
-            <p>Carece en muchos ordenamientos de una regulación propia y específica.</p>
-          </div>
-          <div class="caracteristica-item">
-            <span class="caract-badge caract-badge--dark">Principal</span>
-            <p>Posee validez por sí mismo sin depender de la existencia de otro contrato.</p>
-          </div>
-          <div class="caracteristica-item">
-            <span class="caract-badge caract-badge--outline">Oneroso</span>
-            <p>Establece provechos y gravámenes recíprocos para ambas partes.</p>
-          </div>
-          <div class="caracteristica-item">
-            <span class="caract-badge caract-badge--green">Consensual</span>
-            <p>Se perfecciona mediante el consentimiento (expresado digitalmente, por ejemplo mediante un "clic").</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 13 · CONFIDENCIALIDAD -->
-    <section class="content-section" id="confidencialidad">
-      <div class="section-header">
-        <span class="section-num">13</span>
-        <h2 class="section-title">Finalidad del Contrato de Confidencialidad</h2>
-      </div>
-      <div class="card card--featured">
         <div class="card-accent card-accent--green"></div>
-        <p>La finalidad esencial de las cláusulas o contratos de secreto y confidencialidad es <strong>salvaguardar la información sensible, los datos estratégicos y el código fuente</strong> o propiedad intelectual a la que las partes (como fabricantes, distribuidores, ingenieros o usuarios finales) tienen acceso durante la negociación o ejecución de un servicio.</p>
-        <p style="margin-top:1rem;">Su objetivo es impedir la divulgación no autorizada de secretos comerciales o industriales, obligando legalmente a las partes a mantener bajo estricta reserva dicha información para evitar perjuicios económicos, competencia desleal o vulneraciones a la seguridad material de los sistemas.</p>
-      </div>
-    </section>
-
-    <!-- 14 · FIRMA ELECTRÓNICA -->
-    <section class="content-section" id="firma-electronica">
-      <div class="section-header">
-        <span class="section-num">14</span>
-        <h2 class="section-title">La Firma Electrónica</h2>
-      </div>
-      <div class="card card--featured">
-        <div class="card-accent card-accent--dark"></div>
-        <p>La firma electrónica consiste en un conjunto de datos en forma electrónica consignados en una comunicación o mensaje de datos, utilizados como un <strong>medio de autenticación digital</strong>. Su función técnica y legal es identificar al autor del documento e indicar que este aprueba la información contenida en el mensaje de datos.</p>
-        <p style="margin-top:1rem;">Su origen radica en la seguridad informática y la criptografía (uso de identificadores de clave pública), garantizando principios como la autenticidad y la integridad de la información que viaja por redes abiertas.</p>
-      </div>
-      <div class="card">
-        <div class="card-accent card-accent--blue"></div>
-        <h3 class="card-title">¿Qué NO constituye Firma Electrónica?</h3>
-        <ul class="styled-list styled-list--no">
-          <li>Una simple contraseña (<em>password</em>) donde el usuario no tiene control directo sobre su creación.</li>
-          <li>El escaneo de una firma autógrafa digitalizada en imagen.</li>
-          <li>La incorporación de una impresión dactilar sin certificación segura.</li>
+        <p>El Derecho se divide inicialmente en sus ramas tradicionales:</p>
+        <p style="margin-top:0.5rem;"><strong>Derecho Público (<em>ius publicum</em>):</strong> Es el conjunto de normas que regula las relaciones y funciones del Estado, así como las relaciones de este con los particulares. Dentro de este se clasifican ramas como: Derecho Constitucional, Derecho Administrativo, Derecho Procesal, Derecho Penal, Derecho Fiscal y Derecho Internacional.</p>
+        <p style="margin-top:0.75rem;"><strong>Nuevas disciplinas o ramas especializadas:</strong> Adicionalmente, se identifican la necesidad de regular fenómenos específicos y modernos, dando origen a disciplinas independientes como:</p>
+        <ul class="styled-list">
+          <li><strong>Derecho Aéreo:</strong> Encargado de normar las peculiaridades de la navegación aérea, las aeronaves y el espacio aéreo para solucionar problemas y daños derivados de este servicio.</li>
+          <li><strong>Derecho Ecológico:</strong> Enfocado en regular las relaciones que surgen entre el ser humano y la naturaleza, buscando proteger el ecosistema ante los efectos del cambio climatológico.</li>
         </ul>
       </div>
     </section>
 
-    <!-- 15 · LEY FIRMA ELECTRÓNICA GT -->
-    <section class="content-section" id="ley-firma">
-      <div class="section-header">
-        <span class="section-num">15</span>
-        <h2 class="section-title">Ley que regula la Firma Electrónica en Guatemala</h2>
-      </div>
-      <div class="card card--law">
-        <div class="law-banner">
-          <div class="law-icon">⚖️</div>
-          <div>
-            <h3 class="card-title">Decreto Número 47-2008</h3>
-            <p class="law-subtitle">Congreso de la República de Guatemala</p>
-          </div>
-        </div>
-        <p style="margin-top:1rem;">"Ley para el Reconocimiento de las Comunicaciones y Firmas Electrónicas". Esta ley adopta un enfoque ecléctico (combina el reconocimiento minimalista de los medios electrónicos con un criterio maximalista para otorgar fuerza jurídica).</p>
-        <div class="highlight-block highlight-block--green" style="margin-top:1rem;">
-          <strong>Artículo 33</strong>
-          <p>La firma electrónica o la firma electrónica avanzada gozarán del mismo valor jurídico que la firma manuscrita (autógrafa) plasmada en papel, siendo admisible como prueba plena en juicio.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- 16 · LA PATENTE -->
-    <section class="content-section" id="patente">
-      <div class="section-header">
-        <span class="section-num">16</span>
-        <h2 class="section-title">La Patente</h2>
-      </div>
-      <div class="card card--featured">
-        <div class="card-accent card-accent--green"></div>
-        <p>Una patente es un <strong>título de propiedad otorgado exclusivamente por el Estado</strong> que ampara el derecho del inventor o del titular sobre una invención de carácter técnico, y cuyos alcances y efectos están rígidamente determinados por la ley de la materia (como la Ley de Propiedad Industrial). Su propósito es garantizar la explotación comercial exclusiva de la creación por un tiempo determinado, impidiendo que terceros la utilicen sin autorización.</p>
-        <p style="margin-top:1rem;">Cabe destacar que, bajo la legislación de derecho de autor, los programas de ordenador (software) se protegen como <strong>obras literarias</strong> y no por vía de patentes propiamente, a menos que formen parte integral de un invento físico que requiera de dicho programa para funcionar.</p>
-      </div>
-    </section>
-
-    <!-- 17 · HABEAS DATA -->
-    <section class="content-section" id="habeas-data">
-      <div class="section-header">
-        <span class="section-num">17</span>
-        <h2 class="section-title">El Habeas Data</h2>
-      </div>
-      <div class="card card--featured">
-        <div class="card-accent card-accent--blue"></div>
-        <p>El Habeas Data es una institución y un derecho fundamental enfocado en la protección de los datos de carácter personal y la privacidad de los ciudadanos frente al uso masivo de las tecnologías de la información. Consiste en la facultad jurídica que tiene cualquier persona para <strong>conocer qué información sobre su persona se encuentra almacenada</strong> en bancos de datos, archivos o registros (ya sean públicos o privados), con el objeto de controlar su uso.</p>
-      </div>
-      <div class="card">
-        <div class="card-accent card-accent--dark"></div>
-        <h3 class="card-title">Facultades que comprende</h3>
-        <div class="badge-group" style="margin-bottom:1rem;">
-          <span class="badge badge--green">Acceso</span>
-          <span class="badge badge--blue">Rectificación</span>
-          <span class="badge badge--outline">Actualización</span>
-          <span class="badge badge--dark">Cancelación</span>
-          <span class="badge badge--outline">Oposición</span>
-        </div>
-        <p>Estas facultades pueden ejercerse cuando los datos sean inexactos, desactualizados, se utilicen para fines distintos a los autorizados, o impliquen un perjuicio injustificado en los ámbitos laborales, financieros o sociales.</p>
-      </div>
-    </section>
-
-    <!-- 18 · EL DELITO -->
-    <section class="content-section" id="delito">
-      <div class="section-header">
-        <span class="section-num">18</span>
-        <h2 class="section-title">El Delito</h2>
-      </div>
+    <section class="content-section" id="cibernetica">
+      <div class="section-header"><span class="section-num">07</span><h2 class="section-title">Definición de la Cibernética</h2></div>
       <div class="card card--featured">
         <div class="card-accent card-accent--dark"></div>
-        <p>Desde la perspectiva del marco jurídico penal aplicable al entorno tecnológico e informático, el delito es toda <strong>conducta humana de carácter típico, antijurídico, culpable y punible</strong> que lesiona o pone en peligro un bien jurídico tutelado por el Estado. El delito representa la comisión de un acto u omisión ilícita que se encuentra expresamente catalogada y sancionada con una pena dentro del Código Penal.</p>
+        <div class="etymology-banner">
+          <span class="etym-label">Origen</span>
+          <span class="etym-text">Etimológicamente, la palabra Cibernética proviene de las voces griegas <em>kibernetes</em> (que significa "piloto") y <em>kibernes</em> (que alude al acto de "gobernar").</span>
+        </div>
+        <p style="margin-top:1rem;">Científicamente, se define como la ciencia interdisciplinaria que estudia de forma comparativa los sistemas de comunicación, de regulación automática y de control tanto en los seres vivos como en las máquinas. Se ocupa de los fenómenos de control y comunicación mediante el uso de métodos científicos para explicar fenómenos sociales o naturales, traduciéndose en la construcción de instrumentos o máquinas (inclusive Inteligencia Artificial) que simulen o reproduzcan de forma sintética la inteligencia y actividades del hombre.</p>
       </div>
     </section>
 
-    <!-- 19 · CLASES DE DELITO -->
-    <section class="content-section" id="clases-delito">
-      <div class="section-header">
-        <span class="section-num">19</span>
-        <h2 class="section-title">Clases de Delito</h2>
-      </div>
-      <div class="two-col">
-        <div class="card">
-          <div class="card-accent card-accent--blue"></div>
-          <h3 class="card-title">Delitos Tradicionales</h3>
-          <p>Acciones ilícitas tipificadas de manera clásica en el Código Penal, destinadas a vulnerar la propiedad privada, las marcas, los derechos de autor tangibles o los bienes muebles e inmuebles de las personas.</p>
-        </div>
-        <div class="card">
-          <div class="card-accent card-accent--dark"></div>
-          <h3 class="card-title">Delitos Informáticos</h3>
-          <p>Conductas ilícitas de reciente data que se cometen mediante el uso de computadoras, redes de telecomunicación o programas informáticos:</p>
-          <ul class="styled-list" style="margin-top:.75rem;">
-            <li><strong>Alteración o destrucción de datos:</strong> modificar o dañar registros digitales sin autorización.</li>
-            <li><strong>Violación de derechos de autor de software:</strong> copiar, reproducir o distribuir programas sin autorización del titular (Art. 274 "C" del Código Penal).</li>
-            <li><strong>Vulneración de medidas tecnológicas:</strong> eludir, desactivar o romper dispositivos que controlan el acceso a obras protegidas.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- 20 · BIEN JURÍDICO TUTELADO -->
-    <section class="content-section" id="bien-juridico">
-      <div class="section-header">
-        <span class="section-num">20</span>
-        <h2 class="section-title">El Bien Jurídico Tutelado</h2>
-      </div>
-      <div class="card card--featured">
-        <div class="card-accent card-accent--green"></div>
-        <p>El bien jurídico tutelado es el valor, interés o derecho fundamental (individual o colectivo) que la sociedad y el Estado consideran esencial para la convivencia armónica, la paz social y el desarrollo de las personas. Por tal razón, el ordenamiento legal los reviste de una protección especial, elevándolos a la categoría de bienes protegidos por las leyes del país.</p>
-      </div>
+    <section class="content-section" id="informatica">
+      <div class="section-header"><span class="section-num">08</span><h2 class="section-title">Definición de la Informática</h2></div>
       <div class="card">
         <div class="card-accent card-accent--blue"></div>
-        <h3 class="card-title">Bien Jurídico Tutelado de los Delitos Informáticos</h3>
-        <div class="icon-grid">
-          <div class="icon-item">
-            <div class="icon-box icon-box--green">💻</div>
-            <strong>Software</strong>
-            <p>Se protege la propiedad intelectual, garantizando derechos morales y patrimoniales frente a reproducciones sin autorización.</p>
-          </div>
-          <div class="icon-item">
-            <div class="icon-box icon-box--blue">🔒</div>
-            <strong>Datos e Información</strong>
-            <p>Cuando atienden a identificadores de personas, se tutelan bajo los principios de privacidad, confidencialidad y control.</p>
-          </div>
-          <div class="icon-item">
-            <div class="icon-box icon-box--dark">🛡️</div>
-            <strong>Integridad de Sistemas</strong>
-            <p>Se protege la infraestructura digital y la información confidencial para evitar fraudes o suplantación de identidad.</p>
-          </div>
+        <p>La Informática, también denominada "computación", es la ciencia que administra métodos, técnicas y procesos orientados a almacenar, procesar y transmitir información y datos en formato digital utilizando sistemas computacionales. Su nombre se compone de los términos "información" y "automática", lo que la define esencialmente como la ciencia del tratamiento automático o automatizado de la información mediante computadoras. Para lograr su fin, emplea sistemas que interactúan de forma conjunta a través de medios físicos (<em>hardware</em>), medios lógicos (<em>software</em>) y las personas que los programan o usan (<em>humanware</em>).</p>
+      </div>
+    </section>
+
+    <section class="content-section" id="relacion-derecho-inf">
+      <div class="section-header"><span class="section-num">09</span><h2 class="section-title">Relación que existe entre el Derecho y la Informática</h2></div>
+      <div class="card card--featured">
+        <div class="card-accent card-accent--green"></div>
+        <p>La relación entre el Derecho y la Informática es estrecha y de carácter multidisciplinario. Dado que la informática permite el almacenamiento y procesamiento masivo de datos digitales, el Derecho interviene para regular la conducta de los hombres en el uso de estas tecnologías, previniendo la violación de derechos fundamentales. Esta interrelación genera dos líneas de investigación fundamentales:</p>
+        <div class="highlight-block highlight-block--blue">
+          <strong>La Informática Jurídica:</strong> Se presenta cuando el Derecho utiliza a la informática de forma instrumental, es decir, como una herramienta y soporte para optimizar el diseño, compilación, resguardo y automatización de la información y los procesos legales.
+        </div>
+        <div class="highlight-block highlight-block--green">
+          <strong>El Derecho de la Informática (o Derecho Informático):</strong> Ocurre cuando el Derecho toma a la informática como su objeto de estudio para crear un marco regulador de sus actividades, dictando leyes y principios aplicables a los hechos y actos derivados de la tecnología (tales como delitos informáticos, comercio electrónico, firmas digitales, etc.).
         </div>
       </div>
     </section>
 
-    <!-- 21 · ACCIONES PENAL Y CIVIL -->
-    <section class="content-section" id="acciones">
-      <div class="section-header">
-        <span class="section-num">21</span>
-        <h2 class="section-title">Finalidad de las Acciones Penal y Civil</h2>
-      </div>
-      <div class="two-col">
-        <div class="card">
-          <div class="card-accent card-accent--dark"></div>
-          <h3 class="card-title">Acción Penal</h3>
-          <p>Tiene como finalidad esencial la <strong>persecución y el castigo</strong> de las conductas delictivas que vulneran los bienes jurídicos tutelados. En el contexto de los conflictos derivados del uso de la tecnología, acudir a la vía procesal penal busca que el Estado investigue el hecho ilícito, determine la culpabilidad del infractor y le imponga una pena o sanción punitiva contemplada en la ley penal, restableciendo con ello el orden público perturbado.</p>
-        </div>
-        <div class="card">
-          <div class="card-accent card-accent--green"></div>
-          <h3 class="card-title">Acción Civil</h3>
-          <p>Tiene una finalidad eminentemente <strong>resarcitoria, reparadora y económica</strong>. Su objetivo no es castigar penalmente al infractor, sino el reconocimiento de los derechos morales y patrimoniales del titular, la cesación inmediata del acto ilícito y, fundamentalmente, la reclamación de una <strong>indemnización por los daños y perjuicios económicos</strong> ocasionados.</p>
-        </div>
+    <section class="content-section" id="clasificacion-inf-jur">
+      <div class="section-header"><span class="section-num">10</span><h2 class="section-title">Clasificación de la Informática Jurídica</h2></div>
+      <div class="card">
+        <div class="card-accent card-accent--dark"></div>
+        <p>La informática jurídica se define de manera general como el conjunto de técnicas instrumentales de almacenamiento y recuperación de datos destinadas a sustituir la actividad rutinaria del hombre en sus labores de localización de información jurídica. Se clasifica formalmente en tres grandes ramas:</p>
+        <ul class="styled-list" style="margin-top:0.5rem;">
+          <li><strong>Informática Jurídica de Gestión:</strong> También llamada ofimática, burótica o de administración. Consiste en la automatización de los procesos repetitivos, burocráticos y rutinarios dentro de la administración judicial, oficinas de abogados, notarías o el ámbito público. Analiza y controla los flujos de datos dentro de los sistemas de información, permitiendo el seguimiento rápido y seguro de expedientes, trámites notariales, registros de actos procesales y la redacción de contratos o escritos.</li>
+          <li><strong>Informática Jurídica Documental:</strong> Es la automatización del conocimiento jurídico que proviene de diversas fuentes fuentes legislativas, jurisprudenciales y doctrinales. Su principal finalidad es la aplicación de técnicas informáticas para la creación de bancos de datos documentales, permitiendo a los operadores jurídicos recuperar textos legales completos mediante el uso de criterios de búsqueda estructurados, abstracts o instrumentos lingüísticos. De todas las ramas, ha sido la de mayor desarrollo histórico.</li>
+          <li><strong>Informática Jurídica Decisional (o Metadocumental):</strong> Va más allá de la simple recuperación de información; consiste en la automatización de las fuentes de producción jurídica mediante el auxilio de ordenadores e Inteligencia Artificial para la resolución automática de casos o para servir de apoyo al decisor humano en su tarea. Utiliza modelos predefinidos y sistemas expertos legales para proponer soluciones adecuadas a casos específicos y concretos (por ejemplo, determinar de forma automática la admisión de una demanda o el rechazo de un recurso extemporáneo).</li>
+        </ul>
       </div>
     </section>
 
-    <!-- 22 · DERECHO DE TRABAJO -->
-    <section class="content-section" id="derecho-trabajo">
-      <div class="section-header">
-        <span class="section-num">22</span>
-        <h2 class="section-title">El Derecho de Trabajo</h2>
-      </div>
+    <section class="content-section" id="derecho-informatico-def">
+      <div class="section-header"><span class="section-num">11</span><h2 class="section-title">Definición de Derecho Informático</h2></div>
       <div class="card card--featured">
         <div class="card-accent card-accent--blue"></div>
-        <p>El Derecho de Trabajo (o Derecho Laboral) es la rama del derecho que se encarga de regular las relaciones jurídicas que se establecen entre los patronos y los trabajadores, así como las derivadas de los contratos de trabajo. Su propósito es equilibrar la relación laboral, garantizando condiciones justas, el cumplimiento de obligaciones recíprocas, el respeto a los derechos irrenunciables de los trabajadores y la regulación de aspectos colectivos.</p>
+        <p>Es considerado una materia inequívocamente jurídica y autónoma en su estudio (aunque no posea una ley penal codificada por separado). Se define como el conjunto de leyes, normas, jurisprudencia y principios aplicables a los hechos y actos jurídicos derivados de la informática y la telemática. A diferencia de la informática jurídica (que usa la computadora como herramienta), el Derecho Informático toma a la tecnología como su objeto de estudio y regulación. Su propósito es regular los efectos jurídicos del uso de las Nuevas Tecnologías de la Información y la Comunicación (NTIC), abarcando áreas que van desde la protección de datos, la privacidad y el comercio electrónico, hasta la propiedad intelectual del software y la persecución de delitos informáticos.</p>
       </div>
+    </section>
+
+    <section class="content-section" id="contrato-electronico-def">
+      <div class="section-header"><span class="section-num">12</span><h2 class="section-title">Qué es un Contrato Electrónico</h2></div>
       <div class="card">
         <div class="card-accent card-accent--green"></div>
-        <h3 class="card-title">Utilidad para un Ingeniero en Sistemas</h3>
-        <div class="three-col">
-          <div class="utility-item">
-            <div class="utility-icon">🚀</div>
-            <strong>Como Empleador</strong>
-            <p>Al fundar una startup o liderar equipos de desarrollo, permite estructurar contratos laborales correctamente y administrar planillas con descuentos legales, evitando litigios costosos.</p>
-          </div>
-          <div class="utility-item">
-            <div class="utility-icon">👨‍💼</div>
-            <strong>Como Trabajador</strong>
-            <p>Permite conocer los derechos irrenunciables, negociar contratos de servicios técnicos transparentes y comprender el alcance de las prestaciones y jornadas laborales.</p>
-          </div>
-          <div class="utility-item">
-            <div class="utility-icon">⚙️</div>
-            <strong>Gestión de la Información</strong>
-            <p>Permite diseñar e implementar sistemas de recursos humanos y bases de datos que respeten la privacidad del trabajador y no incurran en abusos de datos personales.</p>
-          </div>
-        </div>
+        <p>Un <em>contrato electrónico</em> es todo acuerdo de voluntades celebrado sin la presencia física simultánea de las partes contratantes. En este tipo de contratación, las partes prestan su consentimiento tanto en el origen como en el destino mediante el uso de equipos electrónicos destinados al tratamiento y almacenaje de datos, los cuales se encuentran interconectados por medio de cables, medios ópticos o cualquier otro sistema electromagnético. Doctrinariamente se caracteriza por ser:</p>
+        <ul class="styled-list">
+          <li><strong>Complejo:</strong> Debido a que puede involucrar o combinar diversos tipos de prestaciones y contratos.</li>
+          <li><strong>Atípico:</strong> Por carecer en muchos ordenamientos de una regulación propia y específica que abarque todas sus modalidades.</li>
+          <li><strong>Principal:</strong> Posee validez por sí mismo sin depender de la existencia de otro contrato.</li>
+          <li><strong>Oneroso:</strong> Establece provechos y gravámenes recíprocos para ambas partes.</li>
+          <li><strong>Consensual:</strong> Se perfecciona y requiere del consentimiento de las partes (expresado comúnmente de forma digital, por ejemplo, mediante la pulsación de un icono de compra o un "clic" en una página web).</li>
+        </ul>
       </div>
     </section>
 
-    <!-- 23 · NORMA JURÍDICA -->
-    <section class="content-section" id="norma-juridica">
-      <div class="section-header">
-        <span class="section-num">23</span>
-        <h2 class="section-title">Norma Jurídica de los Delitos Informáticos</h2>
-      </div>
-      <div class="card card--law">
-        <div class="law-banner">
-          <div class="law-icon">📋</div>
-          <div>
-            <h3 class="card-title">Código Penal de Guatemala</h3>
-            <p class="law-subtitle">Decreto Número 17-73 del Congreso de la República</p>
-          </div>
-        </div>
-        <p style="margin-top:1rem;">En el ordenamiento jurídico de Guatemala, las conductas ilícitas que constituyen delitos informáticos se encuentran tipificadas expresamente en el Código Penal. Las figuras se ubican dentro del <strong>Título VI — Delitos contra el Patrimonio</strong>.</p>
-        <div class="highlight-block highlight-block--blue" style="margin-top:1rem;">
-          <strong>Artículo 274 "C"</strong>
-          <p>Sanciona penalmente "al que, sin autorización del autor, copiare o de cualquier modo reprodujere las instrucciones o programas de computación".</p>
-        </div>
+    <section class="content-section" id="confidencialidad-finalidad">
+      <div class="section-header"><span class="section-num">13</span><h2 class="section-title">Finalidad del Contrato de Confidencialidad</h2></div>
+      <div class="card">
+        <div class="card-accent card-accent--dark"></div>
+        <p>Dentro del ámbito de la contratación informática y la protección de activos tecnológicos, la finalidad esencial de las cláusulas o contratos de <em>secreto y confidencialidad</em> es salvaguardar la información sensible, los datos estratégicos y el código fuente o propiedad intelectual a la que las partes (como fabricantes, distribuidores, ingenieros o usuarios finales) tienen acceso durante la negociación o ejecución de un servicio. Su objetivo es impedir la divulgación no autorizada de secretos comerciales o industriales, obligando legalmente a las partes a mantener bajo estricta reserva dicha información para evitar perjuicios económicos, competencia desleal o vulneraciones a la seguridad material de los sistemas.</p>
       </div>
     </section>
 
-    <!-- 24 · REFLEXIÓN FINAL -->
-    <section class="content-section" id="reflexion">
-      <div class="section-header">
-        <span class="section-num">24</span>
-        <h2 class="section-title">Reflexión Final</h2>
-      </div>
-      <div class="card card--reflection">
-        <div class="reflection-quote">❝</div>
-        <p>Lo que más llama la atención del presente curso es descubrir cómo el entorno puramente técnico y digital, que para un ingeniero consiste en impulsos electrónicos, arquitectura de hardware, lenguaje de bits y desarrollo de software, se entrelaza de forma tan estricta con el marco legal. Es fascinante ver que conceptos informáticos abstractos como el código fuente, la encriptación, las bases de datos o un simple "clic" en una página web no están aislados en el ciberespacio, sino que poseen un valor legal equivalente al mundo físico.</p>
-        <p style="margin-top:1rem;">Aprender que el software que desarrollamos está protegido por el derecho de autor como una obra literaria, y comprender que las leyes locales e internacionales (como la Ley Modelo de la CNUDMI o el Decreto 47-2008 en Guatemala) han tenido que evolucionar hacia la "neutralidad tecnológica" y la "equivalencia funcional" de la firma electrónica, cambia por completo la visión del desarrollo de sistemas. Nos enseña que la ingeniería moderna no solo debe optimizar procesos algorítmicos, sino nacer y operar dentro del marco de la legalidad, la seguridad de la información y la protección de los derechos humanos de los usuarios.</p>
-      </div>
+    <section class="content-section" id="firma-electronica-def">
+      <div class="section-header"><span class="section-num">14</span><h2 class="section-title">En qué consiste la Firma Electrónica</h2></div>
+      <div class="card card--featured">
+        <div class="card-accent card-accent--blue"></div>
+        <p>La <em>firma electrónica</em> consiste en un conjunto de datos en forma electrónica consignados en una comunicación o mensaje de datos, o bien lógicamente asociados a ellos, que son utilizados como un medio de autenticación digital. Su función técnica y legal es identificar al autor del documento e indicar que este aprueba la información contenida en el mensaje de datos. Desde el punto de vista técnico, su origen radica en la seguridad informática y la criptografía (uso de identificadores de clave pública), garantizando principios como la autenticidad y la integridad de la información que viaja por redes abiertas.</p>
+        <p style="margin-top:0.5rem;">Doctrinariamente, se aclara que no constituyen firma electrónica los mecanismos en los que el usuario no tiene control directo sobre su creación, tales como el uso de una simple contraseña (<em>password</em>), el escaneo de una firma autógrafa digitalizada en imagen o la incorporación de una impresión dactilar sin certificación segura.</p>
       </div>
     </section>
 
-    <!-- FOOTER -->
+    <section class="content-section" id="ley-firma-gt">
+      <div class="section-header"><span class="section-num">15</span><h2 class="section-title">Ley que regula la Firma Electrónica en Guatemala</h2></div>
+      <div class="card">
+        <div class="card-accent card-accent--green"></div>
+        <p>En Guatemala, la legislación encargada de normar esta materia es el Decreto Número 47-2008 del Congreso de la República de Guatemala, el cual contiene la "Ley para el Reconocimiento de las Comunicaciones y Firmas Electrónicas". Esta ley adopta un enfoque ecléctico (combina el reconocimiento minimalista de los medios electrónicos con un criterio maximalista para otorgar fuerza jurídica) y establece expresamente en su artículo 33 que la firma electrónica o la firma electrónica avanzada gozarán del mismo valor jurídico que la firma manuscrita (autógrafa) plasmada en papel, siendo admisible como prueba plena en juicio.</p>
+      </div>
+    </section>
+
+    <section class="content-section" id="patente-def">
+      <div class="section-header"><span class="section-num">16</span><h2 class="section-title">Qué es la Patente</h2></div>
+      <div class="card">
+        <div class="card-accent card-accent--dark"></div>
+        <p>Una <em>patente</em> es un título de propiedad otorgado exclusivamente por el Estado que ampara el derecho del inventor o del titular sobre una invención de carácter técnico, y cuyos alcances y efectos están rígidamente determinados por la ley de la materia (como la Ley de Propiedad Industrial). Su propósito es garantizar la explotación comercial exclusiva de la creación por un tiempo determinado, impidiendo que terceros la utilicen sin autorización. Para que una creación sea patentable, los marcos internacionales y nacionales establecen que debe consistir en una creación humana avanzada de conceptos técnicos mediante la cual se aplique una ley natural, debiendo cumplir con requisitos estrictos de novedad y aplicación industrial.</p>
+        <p style="margin-top:0.5rem;">Cabe destacar que, bajo la legislación de derecho de autor (como la Ley de Derechos de Autor y Derechos Conexos), los programas de ordenador (<em>software</em>) se protegen como obras literarias y no por vía de patentes propiamente, a menos que formen parte integral de un invento físico que requiera de dicho programa para funcionar.</p>
+      </div>
+    </section>
+
+    <section class="content-section" id="habeas-data-def">
+      <div class="section-header"><span class="section-num">17</span><h2 class="section-title">En qué consiste el Habeas Data</h2></div>
+      <div class="card card--featured">
+        <div class="card-accent card-accent--blue"></div>
+        <p>El <em>Habeas Data</em> es una institución y un derecho fundamental enfocado en la protección de los datos de carácter personal y la privacidad de los ciudadanos frente al uso masivo de las tecnologías de la información. Consiste en la facultad jurídica que tiene cualquier persona para conocer qué información sobre su persona se encuentra almacenada en bancos de datos, archivos o registros (ya sean públicos o privados), con el objeto de controlar su uso. Comprende de forma específica la facultad de exigir el acceso, la rectificación, la actualización, la cancelación o la oposición del tratamiento de sus datos personales cuando estos sean inexactos, desactualizados, se utilicen para fines distintos a los autorizados, o impliquen un perjuicio injustificado en sus ámbitos laborales, financieros o sociales.</p>
+      </div>
+    </section>
+
+    <section class="content-section" id="delito-def">
+      <div class="section-header"><span class="section-num">18</span><h2 class="section-title">Qué es el Delito</h2></div>
+      <div class="card">
+        <div class="card-accent card-accent--green"></div>
+        <p>Desde la perspectiva del marco jurídico penal aplicable al entorno tecnológico e informático, el <em>delito</em> es toda conducta humana de carácter típico, antijurídico, culpable y punible que lesiona o pone en peligro un bien jurídico tutelado por el Estado. Representa la comisión de un acto u omisión ilícita que se encuentra expresamente catalogada y sancionada con una pena dentro del Código Penal.</p>
+      </div>
+    </section>
+
+    <section class="content-section" id="clases-delito-def">
+      <div class="section-header"><span class="section-num">19</span><h2 class="section-title">Clases de Delito que existen</h2></div>
+      <div class="card">
+        <div class="card-accent card-accent--dark"></div>
+        <p>Con base en el contenido de las lecturas y su relación con el patrimonio y los sistemas de información, los delitos se pueden clasificar principalmente en:</p>
+        <p style="margin-top:0.5rem;"><strong>Delitos tradicionales contra el patrimonio:</strong> Acciones ilícitas tipificadas de manera clásica en el Código Penal, destinadas a vulnerar la propiedad privada, las marcas, los derechos de autor tangibles o los bienes muebles e inmuebles de las personas.</p>
+        <p style="margin-top:0.5rem;"><strong>Delitos Informáticos (o Delitos Tecnológicos):</strong> Son aquellas conductas ilícitas de reciente data que se cometen mediante el uso de computadoras, redes de telecomunicación o programas informáticos, o bien que tienen a estos sistemas informáticos como blanco. Se identifican específicamente como parte de esta clase:</p>
+        <ul class="styled-list">
+          <li><strong>Alteración o destrucción de datos/programas:</strong> Modificar o dañar registros digitales sin autorización.</li>
+          <li><strong>Violación de derechos de autor de software:</strong> Copiar, reproducir, distribuir o comercializar las instrucciones o programas de computación de un ordenador (<em>software</em>) sin contar con la autorización del titular de los derechos morales y patrimoniales (regulado bajo el Artículo 274 "C" del Código Penal).</li>
+          <li><strong>Vulneración de medidas tecnológicas efectivas:</strong> Eludir, desactivar o romper los dispositivos o componentes que controlan el acceso a obras protegidas o salvaguardan los derechos del autor en entornos digitales.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="content-section" id="bien-juridico-def">
+      <div class="section-header"><span class="section-num">20</span><h2 class="section-title">Qué es el bien jurídico tutelado</h2></div>
+      <div class="card card--featured">
+        <div class="card-accent card-accent--blue"></div>
+        <p>El <em>bien jurídico tutelado</em> es el valor, interés o derecho fundamental (individual o colectivo) que la sociedad y el Estado consideran esencial para la convivencia armónica, la paz social y el desarrollo de las personas. Por tal razón, el ordenamiento legal los reviste de una protección especial, elevándolos a la categoría de bienes protegidos por las leyes del país. El Derecho penal interviene sancionando aquellas conductas humanas que lesionan o ponen en peligro inminente estos intereses primordiales.</p>
+      </div>
+    </section>
+
+    <section class="content-section" id="bien-informatico-def">
+      <div class="section-header"><span class="section-num">21</span><h2 class="section-title">Bien jurídico tutelado de los delitos informáticos</h2></div>
+      <div class="card">
+        <div class="card-accent card-accent--green"></div>
+        <p>En el ámbito informático y tecnológico, se identifican de manera primordial tres elementos o bienes jurídicos específicos que requieren regulación y protección legal cuando se encuentran grabados en forma de archivos o viajan por redes abiertas:</p>
+        <ul class="styled-list">
+          <li><strong>Los programas de ordenador (<em>software</em>):</strong> Se protege la propiedad intelectual, garantizando a sus titulares los derechos morales y patrimoniales de su producción frente a reproducciones o copias sin autorización.</li>
+          <li><strong>Los datos y la información:</strong> Cuando atienden a identificadores de las personas, se tutelan bajo los principios de privacidad, confidencialidad y control de su tratamiento (vinculados directamente con los derechos humanos).</li>
+          <li><strong>La integridad, confidencialidad y autenticidad de las transacciones y sistemas:</strong> Se protege la infraestructura digital y la información confidencial para evitar la interceptación de datos ajenos, fraudes o la suplantación de identidad.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="content-section" id="accion-penal-finalidad">
+      <div class="section-header"><span class="section-num">22</span><h2 class="section-title">Finalidad de la acción penal</h2></div>
+      <div class="card">
+        <div class="card-accent card-accent--dark"></div>
+        <p>La <em>acción penal</em> tiene como finalidad esencial la persecución y el castigo de las conductas delictivas que vulneran los bienes jurídicos tutelados. En el contexto de los conflictos derivados del uso de la tecnología (como la violación de los derechos de autor de un <em>software</em>), acudir a la vía procesal penal busca que el Estado investigue el hecho ilícito, determine la culpabilidad del infractor y le imponga una pena o sanción punitiva (privativa de libertad o multa) contemplada en la ley penal, restableciendo con ello el orden público perturbado.</p>
+      </div>
+    </section>
+
+    <section class="content-section" id="accion-civil-finalidad">
+      <div class="section-header"><span class="section-num">23</span><h2 class="section-title">Finalidad de la acción civil</h2></div>
+      <div class="card">
+        <div class="card-accent card-accent--blue"></div>
+        <p>La <em>acción civil</em> (que en el caso de la vulneración de derechos de autor o de software se tramita a través del procedimiento del juicio oral) tiene una finalidad eminentemente resarcitoria, reparadora y económica. Su objetivo no es castigar penalmente al infractor, sino el reconocimiento de los derechos morales y patrimoniales del titular, la cesación inmediata del acto ilícito (como la inactivación remota o el cese de uso de un programa) y, fundamentalmente, la reclamación de una indemnización por los daños y perjuicios económicos ocasionados.</p>
+      </div>
+    </section>
+
+    <section class="content-section" id="derecho-trabajo-def">
+      <div class="section-header"><span class="section-num">24</span><h2 class="section-title">Qué es el Derecho de Trabajo</h2></div>
+      <div class="card card--featured">
+        <div class="card-accent card-accent--green"></div>
+        <p>El <em>Derecho de Trabajo</em> (o Derecho Laboral) es la rama del derecho que se encarga de regular las relaciones jurídicas que se establecen entre los patronos y los trabajadores, así como las derivadas de los contratos de trabajo. Su propósito es equilibrar la relación laboral, garantizando condiciones justas, el cumplimiento de obligaciones recíprocas (como la prestación del servicio a cambio de una retribución económica o salario), el respeto a los derechos irrenunciables de los trabajadores y la regulación de aspectos colectivos (como los sindicatos o las prestaciones laborales), previniendo y resolviendo los conflictos que surjan en la actividad productiva.</p>
+      </div>
+    </section>
+
+    <section class="content-section" id="utilidad-trabajo-ing">
+      <div class="section-header"><span class="section-num">25</span><h2 class="section-title">Utilidad del Derecho de Trabajo para un Ingeniero en Sistemas</h2></div>
+      <div class="card">
+        <div class="card-accent card-accent--dark"></div>
+        <p>Como profesional en ingeniería, el Derecho de Trabajo es de vital utilidad práctica debido al entorno profesional dinámico de las tecnologías de la información:</p>
+        <ul class="styled-list">
+          <li><strong>Como empleador o líder de proyectos (Emprendedor/Gerente):</strong> Al fundar una empresa, consultoría o liderar equipos de desarrollo, dota del conocimiento legal para expresar contratos laborales de forma correcta, administrar planillas con los descuentos correspondientes (como seguridad social o cuotas gremiales) y cumplir con las normativas locales, evitando litigios laborales costosos.</li>
+          <li><strong>Como trabajador (Relación de dependencia):</strong> Permite conocer los derechos irrenunciables, negociar contratos de servicios técnicos o de ingeniería de software transparentes, y comprender el alcance de las prestaciones y jornadas laborales.</li>
+          <li><strong>Gestión de la información laboral:</strong> Dado que las empresas compilan historiales clínicos, expedientes y controles laborales mediante tecnología (grabación de llamadas, monitoreo de correos o navegadores), entender este derecho permite diseñar e implementar sistemas de recursos humanos y bases de datos que respeten la privacidad del trabajador y no incurran en riesgos tecnológicos o abusos de datos personales.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="content-section" id="norma-delitos-inf">
+      <div class="section-header"><span class="section-num">26</span><h2 class="section-title">Norma jurídica donde se encuentran tipificados los delitos informáticos</h2></div>
+      <div class="card">
+        <div class="card-accent card-accent--blue"></div>
+        <p>En el ordenamiento jurídico de Guatemala, las conductas ilícitas que constituyen delitos informáticos se encuentran tipificadas expresamente en el <strong>Código Penal</strong> (Decreto Número 17-73 del Congreso de la República). Estas figuras se ubican dentro del Título VI de los delitos contra el patrimonio, destacando el Artículo 274 "C", el cual sanciona penalmente "al que, sin autorización del autor, copiare o de cualquier modo reprodujere las instrucciones o programas de computación".</p>
+      </div>
+    </section>
+
+    <section class="content-section" id="aspecto-llamativo">
+      <div class="section-header"><span class="section-num">27</span><h2 class="section-title">Aspecto más llamativo del curso</h2></div>
+      <div class="card card--featured">
+        <div class="card-accent card-accent--green"></div>
+        <p>Lo que más llama la atención es descubrir cómo el entorno puramente técnico y digital —que para un ingeniero consiste en impulsos electrónicos, arquitectura de hardware, lenguaje de bits y desarrollo de software— se entrelaza de forma tan estricta con el marco legal. Es fascinante ver que conceptos informáticos abstractos como el código fuente, la encriptación, las bases de datos o un simple "clic" en una página web no están aislados en el ciberespacio, sino que poseen un valor legal equivalente al mundo físico.</p>
+        <p style="margin-top:0.5rem;">Aprender que el software que se desarrolla está protegido por el derecho de autor como una obra literaria, y comprender que las leyes locales e internacionales han tenido que evolucionar hacia la "neutralidad tecnológica" y la "equivalencia funcional" de la firma electrónica, cambia por completo la visión del desarrollo de sistemas. Enseña que la ingeniería moderna no solo debe optimizar procesos algorítmicos, sino nacer y operar dentro del marco de la legalidad, la seguridad de la información y la protección de los derechos humanos de los usuarios.</p>
+      </div>
+    </section>
+
     <footer class="portfolio-footer">
-      <div class="footer-inner">
-        <div class="footer-logo-wrap">
-          <img src="umg-logo.png" alt="UMG" class="footer-logo" onerror="this.style.display='none';" />
-        </div>
-        <div class="footer-info">
-          <p>Universidad Mariano Gálvez de Guatemala</p>
-          <p>Centro Universitario de San Pedro, San Marcos</p>
-          <p>Derecho Informático · Portafolio Digital · Proyecto Final</p>
-        </div>
-        <div class="footer-deco">
-          <div class="footer-circle footer-circle--1"></div>
-          <div class="footer-circle footer-circle--2"></div>
-          <div class="footer-circle footer-circle--3"></div>
-        </div>
-      </div>
+      <p>© 2026 Juan Diego Berdúo Témaj — Facultad de Ingeniería en Sistemas, UMG.</p>
+      <p style="font-size: 0.85rem; opacity: 0.7; margin-top: 0.5rem;">Proyecto Académico de Fin de Ciclo — San Pedro Sacatepéquez, San Marcos.</p>
     </footer>
 
   </main>
 
   <script>
-    // ── Active nav link on scroll ──
-    const sections = document.querySelectorAll('.content-section');
+    const menuToggle = document.getElementById('menuToggle');
+    const sidebar = document.getElementById('sidebar');
+    const sidebarOverlay = document.getElementById('sidebarOverlay');
     const navLinks = document.querySelectorAll('.nav-link');
+
+    if(menuToggle && sidebar && sidebarOverlay) {
+      menuToggle.addEventListener('click', () => {
+        sidebar.classList.toggle('open');
+        sidebarOverlay.classList.toggle('active');
+        menuToggle.classList.toggle('active');
+      });
+      sidebarOverlay.addEventListener('click', () => {
+        sidebar.classList.remove('open');
+        sidebarOverlay.classList.remove('active');
+        menuToggle.classList.remove('active');
+      });
+    }
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        sidebar.classList.remove('open');
+        sidebarOverlay.classList.remove('active');
+        if(menuToggle) menuToggle.classList.remove('active');
+      });
+    });
+
+    const sections = document.querySelectorAll('.content-section');
+    
+    const options = {
+      root: null,
+      rootMargin: '-10% 0px -70% 0px',
+      threshold: 0
+    };
 
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
+          const id = entry.target.getAttribute('id');
+          
           navLinks.forEach(link => {
-            link.classList.toggle('active', link.dataset.section === entry.target.id);
+            if (link.getAttribute('href') === `#${id}`) {
+              link.classList.add('active');
+              link.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            } else {
+              link.classList.remove('active');
+            }
           });
         }
       });
-    }, { rootMargin: '-30% 0px -60% 0px' });
+    }, options);
 
-    sections.forEach(s => observer.observe(s));
-
-    // ── Mobile menu toggle ──
-    const toggle = document.getElementById('menuToggle');
-    const sidebar = document.getElementById('sidebar');
-    const overlay = document.getElementById('sidebarOverlay');
-
-    function openMenu() {
-      sidebar.classList.add('open');
-      overlay.classList.add('visible');
-      toggle.classList.add('is-open');
-    }
-    function closeMenu() {
-      sidebar.classList.remove('open');
-      overlay.classList.remove('visible');
-      toggle.classList.remove('is-open');
-    }
-
-    toggle.addEventListener('click', () => sidebar.classList.contains('open') ? closeMenu() : openMenu());
-    overlay.addEventListener('click', closeMenu);
-
-    // close on nav link click (mobile)
-    navLinks.forEach(link => {
-      link.addEventListener('click', () => {
-        if (window.innerWidth < 900) closeMenu();
-      });
-    });
+    sections.forEach(section => observer.observe(section));
   </script>
 </body>
 </html>
