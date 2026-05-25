@@ -466,16 +466,7 @@ a  { text-decoration: none; color: inherit; }
 }
 .card--reflection p { color: rgba(255,255,255,.85); }
 
-/* accent bar */
-.card-accent {
-  position: absolute;
-  left: 0; top: 0; bottom: 0;
-  width: 4px;
-  border-radius: var(--radius-sm) 0 0 var(--radius-sm);
-}
-.card-accent--green { background: var(--mint-deep); }
-.card-accent--blue  { background: var(--sky-deep); }
-.card-accent--dark  { background: var(--charcoal); }
+
 
 .card-title {
   font-family: var(--font-display);
@@ -640,8 +631,8 @@ a  { text-decoration: none; color: inherit; }
   font-size: .88rem;
 }
 .highlight-block strong { display: block; margin-bottom: .3rem; font-size: .9rem; }
-.highlight-block--green { background: var(--mint); border-left: 3px solid var(--mint-deep); }
-.highlight-block--blue  { background: var(--sky);  border-left: 3px solid var(--sky-deep);  }
+.highlight-block--green { background: var(--mint); }
+.highlight-block--blue  { background: var(--sky);   }
 
 /* modalidades grid */
 .modalidades-grid {
